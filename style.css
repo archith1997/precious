@@ -275,6 +275,7 @@ ul.drop {
 .drop i {
   flex-basis: 33%;
   font-size: 20px;
+
   color: crimson;
 
   padding: 0 30px;
