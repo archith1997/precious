@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: Georgia, serif;
+  font-family: "Ubuntu", sans-serif;
 }
 ul,
 nav {
@@ -128,7 +128,7 @@ section p {
 .banner-area h1 {
   margin-bottom: 15px;
   font-size: 65px;
-  font-family: merienda;
+  font-family: "Ubuntu", sans-serif;
 }
 .banner-area h3 {
   margin-bottom: 40px;
@@ -222,7 +222,7 @@ ul.crew-content {
   text-align: center;
 }
 .drop li i {
-  color: crimson;
+  color: #6465a5;
   margin-bottom: 15px;
   padding-right: 50px;
 }
@@ -276,7 +276,7 @@ ul.drop {
   flex-basis: 33%;
   font-size: 20px;
 
-  color: crimson;
+  color: #6465a5;
 
   padding: 0 30px;
 }
@@ -312,7 +312,7 @@ ul.drop {
 }
 .about-btn {
   padding: 15px 35px;
-  background: crimson;
+  background: #6465a5;
   border-radius: 50px;
 
   color: #fff;
@@ -369,7 +369,7 @@ ul.services-content {
   }
 }
 #contact {
-  background: crimson;
+  background: black;
   color: #fff;
 }
 ul.contact-content {
@@ -465,16 +465,17 @@ footer {
   background: #fff;
 }
 .above-footer {
-  background-color: #ddd;
   list-style-type: none;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  padding: 60px 0;
-  margin-bottom: 30px;
+
   flex-direction: row;
+  background-color: #ddd;
+  flex-basis: 100%;
+  background-size: cover;
 }
 .above-footer li {
   width: 100%;
@@ -591,4 +592,130 @@ div.desc {
   border-color: #fff;
   outline: #fff;
   color: #fff;
+}
+.wrapper {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  max-width: 700px;
+  margin: 50px auto;
+  background: #6465a5;
+  padding: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.wrapper h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+.address {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: #a9aacd;
+  margin-bottom: 50px;
+}
+.inner-address p {
+  font-size: 12px;
+}
+.inner-address .fa {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.wrapper .form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.wrapper .form-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.wrapper .input-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+.wrapper .inner-msg {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.wrapper .input > input {
+  border: 0;
+  width: 200px;
+  padding: 10px 20px;
+  outline: none;
+}
+.wrapper .msg > textarea {
+  width: 100%;
+  border: 0;
+  padding: 10px 20px;
+  outline: none;
+  height: 80px;
+}
+.wrapper .btn {
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.wrapper .btn:hover {
+  background: #fff;
+  color: #6465a5;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  color: #a9aacd;
+}
+.inner-social .fa {
+  margin: 20px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.inner-social .fa:hover {
+  color: #fff;
+}
+::-webkit-input-placeholder {
+  color: #a9aacd;
+}
+::-moz-placeholder {
+  color: #a9aacd;
+}
+@media screen and (max-width: 640px) {
+  .input-form {
+    flex-direction: column;
+  }
+  .input:first-child > input {
+    margin-bottom: 20px;
+  }
+  .input:last-child > input {
+    margin-top: 20px;
+  }
+  .form .input > input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .address,
+  .social {
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner-address,
+  .inner-social {
+    margin-bottom: 20px;
+  }
 }
