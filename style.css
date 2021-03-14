@@ -390,10 +390,17 @@ ul.services-content {
 }
 .services-content li h4 {
   font-size: 20px;
-  margin-bottom: 25px;
+  padding: 10px;
+  
+}
+.services-content li h5{
+  padding-bottom: 20px;
 }
 .services-content li p {
   margin: 0;
+  text-align: center;
+  
+  
 }
 @media (max-width: 1000px) {
   .services-content li {
@@ -750,6 +757,11 @@ div.desc {
 
   padding: 8px 10px;
 }
+::-webkit-placeholder {
+  color: var(--button-color);
+
+  padding: 8px 10px;
+}
 ::-moz-placeholder {
   color: var(--button-color);
 
@@ -783,4 +795,21 @@ div.desc {
 }
 .video {
   background-color: var(--black);
+}
+
+.client{
+  border-radius: 50%;
+  border: 2px solid var(--button-color);
+  box-shadow: 0 0 5px rgba(191, 6, 3, 0.9);
+}
+
+.crew-area p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  line-height: 1.5;
+  text-align: left;
+  padding-left: 0;
+}
+.crew-area {
+  background-color: var(--white);
 }
