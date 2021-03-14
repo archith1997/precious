@@ -326,6 +326,7 @@ ul.drop {
 }
 .about-btn {
   padding: 15px 35px;
+  align-content: center;
   background: var(--button-color);
   border-radius: 50px;
 
