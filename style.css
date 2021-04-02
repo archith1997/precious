@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --button-color: #bf0603;
+  --button-color: #f00314;
   --white: #fff;
   --black: #000;
   --grey: #ddd;
@@ -59,6 +59,23 @@ header nav li:first-child {
 header nav li:last-child {
   margin-right: 0;
 }
+.above-footer nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.above-footer nav li {
+  margin: 0 15px;
+}
+.above-footer nav li:first-child {
+  margin-left: 0;
+}
+.above-footer nav li:last-child {
+  margin-right: 0;
+}
+
 @media (max-width: 1000px) {
   header {
     padding: 20px 50px;
@@ -153,7 +170,40 @@ section p {
   height: 100%;
   background-color: #000;
   opacity: 0.8;
+} /*
+.mission-img {
+  background-image: url(Mission_img.JPG);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backgroud-size: cover;
+  background-size: cover;
+  z-index: -1;
 }
+
+.mission-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+}*/
+
+.mission-img {
+  background-image: url(Mission_img.JPG);
+  background-size: cover;
+  opacity: 0.9;
+  background-color: black;
+  content: "";
+  height: 700px;
+  width: 1000px;
+}
+
 .banner-area h1 {
   margin-bottom: 15px;
   font-size: 65px;
@@ -391,16 +441,13 @@ ul.services-content {
 .services-content li h4 {
   font-size: 20px;
   padding: 10px;
-  
 }
-.services-content li h5{
+.services-content li h5 {
   padding-bottom: 20px;
 }
 .services-content li p {
   margin: 0;
   text-align: center;
-  
-  
 }
 @media (max-width: 1000px) {
   .services-content li {
@@ -518,9 +565,10 @@ footer {
   display: -o-flex;
   display: flex;
   color: var(--white);
-  flex-direction: row;
+  flex-direction: column;
   background-image: url(DFTS.JPG);
   flex-basis: 100%;
+  height: 500px;
   background-size: cover;
 }
 .above-footer li {
@@ -534,23 +582,30 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .cntr {
   align-items: left;
   text-align: left;
   flex-direction: column;
-  height: 300px;
-  width: 500px;
+  height: 200px;
+  width: 250px;
 }
 
 .bottom-logo {
-  flex-basis: 20%;
-  max-height: 65%;
-  max-width: 80%;
+  flex-basis: 100%;
+  max-height: 220px;
+  max-width: 245px;
   object-fit: cover;
   vertical-align: bottom;
   padding-top: 25px;
-  padding-left: 220px;
-  margin-left: 90px;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+.above-footer .nav-bar {
+  padding-top: 120px;
+
+  font-weight: bold;
+  align-items: center;
 }
 .social {
   padding: 20px;
@@ -797,8 +852,9 @@ div.desc {
   background-color: var(--black);
 }
 
-.client{
-  border-radius: 50%;
+.client {
+  border-radius: 30%;
+
   border: 2px solid var(--button-color);
   box-shadow: 0 0 5px rgba(191, 6, 3, 0.9);
 }
@@ -812,4 +868,63 @@ div.desc {
 }
 .crew-area {
   background-color: var(--white);
+}
+.mission-content h2 {
+  padding: 20px;
+  margin-top: -10px;
+}
+
+.mission-content p {
+  text-align: center;
+  margin: 10px;
+}
+#mission-quote {
+  font-weight: bolder;
+  font-style: italic;
+  padding: 20px;
+  width: 500px;
+  padding-top: 100px;
+  color: var(--black);
+  font-size: 20px;
+}
+#mission-para {
+  padding: 30px;
+  width: 1000px;
+  text-align: justify;
+  align-items: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+.program-button {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+#prog-volt {
+  margin-left: 20px;
+}
+.programs {
+  display: flex;
+  flex-direction: row;
+}
+.program-img {
+  background-image: url(Our_Programs.jpg);
+  background-size: cover;
+  height: 700px;
+  width: 500px;
+}
+.program-tab {
+  padding: 15px;
+}
+.program-tab p {
+  text-align: justify;
+  padding-top: 20px;
+}
+.program-tab ul {
+  margin-top: -15px;
+  margin-left: 40px;
+}
+.program-tab li {
+  padding: 10px;
+  list-style-type: circle;
 }
