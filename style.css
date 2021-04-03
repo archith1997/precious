@@ -1055,3 +1055,20 @@ div.desc {
 .donate h2 {
   padding: 40px;
 }
+.volunteer {
+  padding-bottom: 30px;
+}
+.recur {
+  color: var(--button-color);
+  padding: 20px;
+}
+.amount {
+  padding: 40px;
+}
+#other {
+  width: 100px;
+  align-items: center;
+}
+.recur > input {
+  background-color: var(--button-color);
+}
