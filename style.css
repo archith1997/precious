@@ -418,7 +418,7 @@ ul.drop {
   }
 }
 #services {
-  background: #ddd;
+  background: var(--white);
 }
 ul.services-content {
   width: 100%;
@@ -876,10 +876,6 @@ div.desc {
   margin-top: -10px;
 }
 
-.mission-content p {
-  text-align: center;
-  margin: 10px;
-}
 #mission-quote {
   font-weight: bolder;
   font-style: italic;
@@ -888,10 +884,12 @@ div.desc {
   padding-top: 100px;
   color: var(--black);
   font-size: 20px;
+  text-align: center;
+  margin: 10px;
 }
 #mission-para {
-  padding: 30px;
-  width: 1000px;
+  padding: 20px;
+
   text-align: justify;
   align-items: center;
   font-size: 17px;
@@ -919,11 +917,36 @@ div.desc {
 }
 .program-tab {
   padding: 15px;
+  padding-top: 30px;
+  padding-left: 30px;
+  width: 700px;
+}
+.bet {
+  padding-top: 30px;
+}
+.scholarship {
+  align-items: left;
+
+  text-align: justify;
+  padding-top: 20px;
+}
+.scholarship p {
+  text-align: justify;
+  padding-top: 20px;
+}
+.scholarship ul {
+  margin-top: -15px;
+  margin-left: 40px;
+}
+.scholarship li {
+  padding: 10px;
+  list-style-type: circle;
 }
 .program-tab p {
   text-align: justify;
   padding-top: 20px;
 }
+
 .program-tab ul {
   margin-top: -15px;
   margin-left: 40px;
@@ -932,6 +955,7 @@ div.desc {
   padding: 10px;
   list-style-type: circle;
 }
+
 .legacy1 {
   display: flex;
   flex-direction: row;
@@ -1042,12 +1066,12 @@ div.desc {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   margin: 20px;
 }
-.donate1 h3 {
+.donate h3 {
   padding: 20px;
   width: 700px;
   text-align: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-left: 50px;
   font-size: 23px;
   line-height: 1.5;
