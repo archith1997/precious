@@ -429,6 +429,7 @@ ul.services-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
 }
 .services-content li {
   padding: 0 30px;
@@ -449,8 +450,16 @@ ul.services-content {
 }
 .services-content li p {
   margin: 0;
-  text-align: center;
+  text-align: justify;
+  align-items: center;
+  width: 300px;
+  padding-left: 20px;
 }
+#crew-tab p {
+  margin-bottom: 30px;
+  height: 90px;
+}
+
 @media (max-width: 1000px) {
   .services-content li {
     flex-basis: 100%;
@@ -641,7 +650,8 @@ footer {
   margin-left: -40px;
 }
 #crew-tab li {
-  margin-bottom: 80px;
+  margin-bottom: 140px;
+  margin-left: 90px;
 }
 div.gallery {
   border: 1px solid #ccc;
@@ -855,10 +865,8 @@ div.desc {
 }
 
 .client {
-  border-radius: 30%;
-
-  border: 2px solid var(--button-color);
-  box-shadow: 0 0 5px rgba(191, 6, 3, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .crew-area p {
@@ -921,6 +929,87 @@ div.desc {
   padding-left: 30px;
   width: 700px;
 }
+.preci {
+  display: flex;
+  flex-direction: row;
+}
+.precious-img {
+  background-image: url(Precious\ Birdsong\ Headshot.jpg);
+  background-size: cover;
+  height: 500px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.lanise-img {
+  background-image: url(La\'Nise\ Calhoun\ Headshot_edited.jpg);
+  background-size: cover;
+  height: 500px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.linda-img {
+  background-image: url(Linda\ Cooke\ Headshot.jpeg);
+  background-size: cover;
+  height: 500px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.kelli-img {
+  background-image: url(Kelli_Smith.jpg);
+  background-size: cover;
+  height: 500px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.preci-tab {
+  padding-left: 30px;
+  width: 700px;
+}
+.preci-tab h2 {
+  color: var(--button-color);
+}
+.preci-tab p {
+  text-align: justify;
+  padding: 15px;
+  padding-top: 30px;
+  padding-left: 30px;
+  width: 700px;
+}
+.passion {
+  align-items: left;
+
+  text-align: justify;
+  padding-top: 20px;
+}
+.passion h3 {
+  padding: 25px;
+  color: var(--button-color);
+}
+.passion p {
+  text-align: justify;
+  padding-top: 20px;
+}
+.passion ul {
+  margin-top: -15px;
+  margin-left: 40px;
+}
+.passion li {
+  padding: 10px;
+
+  list-style-type: circle;
+}
+.li {
+  line-height: 1.8;
+}
+.head {
+  padding-bottom: 50px;
+  font-size: 35px;
+}
+
 .bet {
   padding-top: 30px;
 }
