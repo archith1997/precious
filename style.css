@@ -149,6 +149,11 @@ section p {
   opacity: 0.8;
 }
 
+.mission-img-padding {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 .mission-img {
   align-items: center;
   text-align: center;
