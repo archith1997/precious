@@ -368,6 +368,13 @@ ul.drop {
 
   color: #fff;
 }
+
+.about-btn:hover {
+  background: var(--white);
+  border: 1.5px solid var(--button-color);
+  color: var(--button-color);
+  font-weight: bold;
+}
 @media (max-width: 1000px) {
   .about-left,
   .about-right {
@@ -665,7 +672,7 @@ footer p {
   font-size: 30px;
 }
 .client {
-  height: 80%;
+  height: 60%;
   width: 80%;
 }
 #foot-nav li {
@@ -674,6 +681,10 @@ footer p {
   justify-content: left;
   padding: 5px;
 }
+header .nav-bar li:hover {
+  color: var(--button-color);
+}
+
 .mission {
   margin-left: -50px;
   padding-top: 20px;
@@ -921,10 +932,11 @@ div.desc {
 }
 
 #mission-quote {
-  font-weight: bolder;
+  font-weight: bold;
   font-style: italic;
+
   padding: 20px;
-  line-height: 1.1;
+  line-height: 1.5;
   color: var(--button-color);
   font-size: 17px;
   text-align: center;
