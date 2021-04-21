@@ -15,6 +15,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
 </head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+	(function() {
+	 emailjs.init('user_SYKpC9efupeAkqt4Ob09I');
+	 })();
+   </script>
+<script type="text/javascript">
+	window.onload = function() {
+	   document.getElementById('contact1').addEventListener('submit', function(event) {
+		   event.preventDefault();
+		   // these IDs from the previous steps
+		   emailjs.sendForm('pbfamilyfoundation@gmail.com', 'template_jfqqnxu',  'contact1')
+			   .then(function() {
+				   console.log('SUCCESS!');
+				   document.getElementById("contact").style.display="none";
+				   document.getElementById('success').style.display = 'block';
+			   }, function(error) {
+				   console.log('FAILED...', error);
+				   document.getElementById("contact").style.display="none";
+				   document.getElementById('not_success').style.display = 'block';
+			   });
+	   });
+	   }
+   </script>
 <body>
 	<header>
 		<li>
@@ -114,36 +138,36 @@
 			<p>+1 524 984 7268</p>
 		</div>-->
 	</div>
-	<form>
+	<form id="contact1" method="get">
 	<div class="form">
 		<div class="form-title">
 				Leave us your precious message
 		</div>
 		<div class="input-form">
 			<div class="input">
-				<input type="text" placeholder=" First Name">
+				<input name="fname1" type="text" placeholder=" First Name" id="fname1" required="">
 			</div>
 			<div class="input">
-				<input type="text" placeholder=" Last Name">
+				<input name="lname1" type="text" placeholder=" Last Name" id="lname1" required="">
 			</div>
 		</div>
 		<div class="inner-msg">
 			<div class="input">
-				<input type="text" placeholder="Email">
+				<input name="emailid1" type="email" placeholder="Email" id="emailid1" required="">
 			</div>
 			
 		</div>
 		<div class="inner-msg">
 		<div class="input">
-			<input type="text" placeholder="Subject">
+			<input name="subject1" type="text" placeholder="Subject" id="subject1" required="">
 		</div></div>
 		<div class="inner-text">
 			<div class="msg">
-				<textarea placeholder="Message"></textarea>
+				<input name="message1" placeholder="Message" id="message1" required=""></input>
 			</div>
 
 		</div>
-		<a href="#" target="_blank" class="about-btn">Send Message</a>
+		<button type="submit"  id="form-submit1" class="about-btn">Send Message</button>
 		<!--<div class="btn">
 			Send Message
 		</div>-->
