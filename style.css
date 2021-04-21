@@ -50,6 +50,10 @@ header nav {
   display: -o-flex;
   display: flex;
 }
+header .nav-bar {
+  padding-top: 3%;
+  padding-left: 50%;
+}
 header nav li {
   margin: 0 15px;
 }
@@ -240,13 +244,33 @@ ul.crew-content {
 .crew-left {
   flex-basis: 40%;
   background-image: url(1.jpg);
-}
+} /*
 .main-logo {
   flex-basis: 40%;
   max-height: 18%;
   max-width: 25%;
   object-fit: cover;
   vertical-align: bottom;
+}*/
+.main-logo {
+  background-image: url(White_Prime.png);
+  position: absolute;
+
+  left: 30px;
+  top: 25px;
+
+  width: 240px;
+  height: 160px;
+  -webkit-backgroud-size: cover;
+  background-size: cover;
+  z-index: 1;
+}
+.main-logo:after {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
 }
 
 .nav-bar {
@@ -577,14 +601,14 @@ footer p {
 }
 
 .foot-img {
-  background-image: url(DFTS_Edited.jpg);
+  background-image: url(DFTS_new.jpg);
   position: absolute;
 
   left: 0;
   width: 100%;
   height: 540px;
   -webkit-backgroud-size: cover;
-  background-size: cover;
+  background-size: 100% 100%;
   z-index: -1;
 }
 .foot-img:after {
@@ -601,7 +625,7 @@ footer p {
   position: absolute;
   align-items: right;
   text-align: right;
-  right: 30px;
+  right: 5%;
   margin-top: -200px;
   width: 240px;
   height: 160px;
@@ -616,30 +640,33 @@ footer p {
   width: 100%;
   height: 100%;
 }
-.quick_links h2 {
-  padding-bottom: 10px;
+.above-footer ul {
+  padding-top: 8%;
+}
+.above-footer li {
+  padding: 10px;
 }
 .quick_links {
-  margin-left: -20px;
-  margin-top: -20px;
+  height: 325px;
+  margin-left: -1%;
 }
-.quick_links li {
-  padding: 10px;
+.quick_links ul {
+  margin-top: 8%;
 }
 .volunt {
   height: 325px;
-  padding-left: 90px;
+  padding-left: 5%;
 }
 .volunt li {
-  padding-top: 20px;
-  line-height: 1.5;
+  line-height: 2em;
 }
 .addre {
   height: 325px;
-  padding-left: 90px;
+  padding-left: 5%;
 }
-.addre ul {
-  padding-top: 20px;
+.addre li {
+  padding: 2px;
+  line-height: 1.5;
 }
 .cont {
   display: flex;
@@ -985,11 +1012,10 @@ div.desc {
 }
 #mission-para {
   padding: 20px;
-
+  padding-top: 5%;
   text-align: justify;
   align-items: center;
   font-size: 17px;
-  font-weight: bold;
 }
 .program-button {
   display: flex;
