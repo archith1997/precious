@@ -13,6 +13,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
 </head>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<script type="text/javascript">
+	(function() {
+	emailjs.init("user_SYKpC9efupeAkqt4Ob09I");
+	})();
+	</script>
+<script type="text/javascript">
+	window.onload = function() {
+	   document.getElementById('volunteer1').addEventListener('submit', function(event) {
+		   event.preventDefault();
+		   // these IDs from the previous steps
+		   emailjs.sendForm('pbfamilyfoundation', 'template_volunteer',  'volunteer1')
+			   .then(function() {
+				   console.log('SUCCESS!');
+				   document.getElementById("volunteer1").style.display="none";
+				   document.getElementById('success').style.display = 'block';
+			   }, function(error) {
+				   console.log('FAILED...', error);
+				   document.getElementById("volunteer1").style.display="none";
+				   document.getElementById('not_success').style.display = 'block';
+			   });
+	   });
+	   }
+</script>
 <body>
 	<header>
 		<div class="main-logo"></div>
@@ -89,48 +115,52 @@
                         <li>Participation in extra-curricular activities/sports</li>
                         <li>Personal Character</li>
                         <li>Leadership Roles</li></ul>
-					</div>
-					<form>
-			<div class="wrapper" id="volunteer">
+					</div>				
+		
+			<div class="wrapper">
+			 <form id="volunteer1" method="get" >
 				<h2 class="volunteer">Volunteer</h2>
 				<div class="form">
 					
 					<div class="input-form">
 						<div class="input">
-							<input type="text" placeholder=" First Name">
+							<input type="text" placeholder=" First Name" id="fname1">
 						</div>
 						<div class="input">
-							<input type="text" placeholder=" Last Name">
+							<input type="text" placeholder=" Last Name" id="lname1">
 						</div>
 					</div>
 					<div class="inner-msg">
 						<div class="input">
-							<input type="text" placeholder="Email">
+							<input type="email" placeholder="Email" id="emailid1">
 						</div>
 						
 					</div>
 					<div class="inner-msg">
 						<div class="input">
-							<input type="text" placeholder="Phone Number">
+							<input type="number" placeholder="Phone Number" id="phonenumber1">
 						</div>
 						
 					</div>
 					<div class="inner-msg">
 					<div class="input">
-						<input type="text" placeholder="Volunteer Interest">
+						<input type="text" placeholder="Volunteer Interest" id="volunteerinterest1">
 					</div>
-				</div>
-				<div class="inner-msg">
+				    </div>
+				    <div class="inner-msg">
 					<div class="input">
-						<input type="text" placeholder="Anything else we should know?">
+						<input type="text" placeholder="Anything else we should know?" id="additionalinfo1">
 					</div>
-				</div>
+				    </div>
 					
-					<a href="#" target="_blank" class="about-btn">I am Interested</a>
+					<button type="submit"  id="form-submit1" class="about-btn">I am Interested</button>
 					
 				</div>
-			</form>
-			</div>
+			 </form>
+			 <p id="success"  style="display: none;" >We appreciate you contacting us. One of our colleagues will get back in touch with you soon! Have a great day :D</p>     
+		     <p id="not_success"  style="display: none;" >We Apologize but there is some Technical fault... Try sometime Later :(</p>
+	      </div>
+	</div>	
 		</section>
 		<!--Footer Begins here -->
 
