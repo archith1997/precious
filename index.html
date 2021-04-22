@@ -16,29 +16,30 @@
 <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
 </head>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
 <script type="text/javascript">
 	(function() {
-	 emailjs.init('user_SYKpC9efupeAkqt4Ob09I');
-	 })();
-   </script>
+	emailjs.init("user_SYKpC9efupeAkqt4Ob09I");
+	})();
+	</script>
 <script type="text/javascript">
 	window.onload = function() {
 	   document.getElementById('contact1').addEventListener('submit', function(event) {
 		   event.preventDefault();
 		   // these IDs from the previous steps
-		   emailjs.sendForm('pbfamilyfoundation@gmail.com', 'template_jfqqnxu',  'contact1')
+		   emailjs.sendForm('pbfamilyfoundation', 'template_jfqqnxu',  'contact1')
 			   .then(function() {
 				   console.log('SUCCESS!');
-				   document.getElementById("contact").style.display="none";
+				   document.getElementById("contact1").style.display="none";
 				   document.getElementById('success').style.display = 'block';
 			   }, function(error) {
 				   console.log('FAILED...', error);
-				   document.getElementById("contact").style.display="none";
+				   document.getElementById("contact1").style.display="none";
 				   document.getElementById('not_success').style.display = 'block';
 			   });
 	   });
 	   }
-   </script>
+</script>
 <body>
 	<header>
 		
@@ -171,6 +172,9 @@
 		<button type="submit"  id="form-submit1" class="about-btn" >Send Message</button>
 		</div>
 </form>
+        <p id="success"  style="display: none;" >We appreciate you contacting us. One of our colleagues will get back in touch with you soon! Have a great day :D</p>     
+        <p id="not_success"  style="display: none;" >We Apologize but there is some Technical fault... Try sometime Later :(</p>
+
 	<div class="social">
 		<div class="inner-social">
 			<a id="fb" href="https://www.facebook.com/pbfamfoundation" target="_blank"><i class="fa fa-facebook-f"></i></a>
