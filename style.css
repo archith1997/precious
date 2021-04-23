@@ -13,6 +13,7 @@ html {
 }
 body {
   font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
 }
 ul,
 nav {
@@ -51,8 +52,9 @@ header nav {
   display: flex;
 }
 header .nav-bar {
+  display: flex;
   padding-top: 3%;
-  padding-left: 50%;
+  padding-left: 28%;
 }
 header nav li {
   margin: 0 15px;
@@ -132,7 +134,7 @@ section p {
   text-align: center;
 }
 .banner-area .banner-img {
-  background-image: url(2.jpg);
+  background-image: url(images/2.jpg);
   position: absolute;
   top: 0;
   left: 0;
@@ -221,7 +223,7 @@ ul.about-content {
 }
 .about-left {
   flex-basis: 40%;
-  background-image: url(1.jpg);
+  background-image: url(images/1.jpg);
 }
 ul.crew-content {
   width: 100%;
@@ -243,7 +245,7 @@ ul.crew-content {
 }
 .crew-left {
   flex-basis: 40%;
-  background-image: url(1.jpg);
+  background-image: url(images/1.jpg);
 } /*
 .main-logo {
   flex-basis: 40%;
@@ -253,7 +255,7 @@ ul.crew-content {
   vertical-align: bottom;
 }*/
 .main-logo {
-  background-image: url(White_Prime.png);
+  background-image: url(images/White_Prime.png);
   position: absolute;
 
   left: 30px;
@@ -601,7 +603,7 @@ footer p {
 }
 
 .foot-img {
-  background-image: url(DFTS_new.jpg);
+  background-image: url(images/DFTS_new.jpg);
   position: absolute;
 
   left: 0;
@@ -621,25 +623,25 @@ footer p {
   opacity: 0.8;
 }
 .foot-logo {
-  background-image: url(White_Prime.png);
+  background-image: url(images/White_Prime.png);
   position: absolute;
   align-items: right;
   text-align: right;
   right: 5%;
-  margin-top: -200px;
+  margin-top: 20%;
   width: 240px;
   height: 160px;
   -webkit-backgroud-size: cover;
   background-size: cover;
   z-index: 1;
 }
-.foot-logo:after {
+/* .foot-logo:after {
   content: "";
   position: absolute;
 
   width: 100%;
   height: 100%;
-}
+} */
 .above-footer ul {
   padding-top: 8%;
 }
@@ -1030,7 +1032,7 @@ div.desc {
   flex-direction: row;
 }
 .program-img {
-  background-image: url(Our_Programs.jpg);
+  background-image: url(images/Our_Programs.jpg);
   background-size: cover;
   height: 700px;
   width: 500px;
@@ -1048,7 +1050,7 @@ div.desc {
   flex-direction: row;
 }
 .precious-img {
-  background-image: url(Precious\ Birdsong\ Headshot.jpg);
+  background-image: url(images/Precious\ Birdsong\ Headshot.jpg);
   background-size: cover;
   height: 500px;
   width: 400px;
@@ -1056,7 +1058,7 @@ div.desc {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .lanise-img {
-  background-image: url(La\'Nise\ Calhoun\ Headshot_edited.jpg);
+  background-image: url(images/La\'Nise\ Calhoun\ Headshot.jpg);
   background-size: cover;
   height: 500px;
   width: 400px;
@@ -1064,7 +1066,7 @@ div.desc {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .linda-img {
-  background-image: url(Linda\ Cooke\ Headshot.jpeg);
+  background-image: url(images/Linda\ Cooke\ Headshot.jpeg);
   background-size: cover;
   height: 500px;
   width: 400px;
@@ -1072,7 +1074,7 @@ div.desc {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .kelli-img {
-  background-image: url(Kelli_Smith.jpg);
+  background-image: url(images/Kelli_Smith.jpg);
   background-size: cover;
   height: 500px;
   width: 400px;
@@ -1249,7 +1251,7 @@ div.desc {
   margin-top: -50px;
 }
 .cont-img {
-  background-image: url(1.jpg);
+  background-image: url(images/1.jpg);
   position: absolute;
 
   left: 0;
@@ -1312,7 +1314,7 @@ div.desc {
   list-style-type: none;
 }
 .donate1 {
-  background-image: url(Community.jpg);
+  background-image: url(images/Community.jpg);
   background-size: cover;
   content: "";
   height: 500px;
