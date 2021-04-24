@@ -54,7 +54,7 @@ header nav {
 header .nav-bar {
   display: flex;
   padding-top: 3%;
-  padding-left: 28%;
+  padding-left: 50%;
 }
 header nav li {
   margin: 0 15px;
@@ -65,6 +65,7 @@ header nav li:first-child {
 header nav li:last-child {
   margin-right: 0;
 }
+/*
 .above-footer nav {
   display: -webkit-flex;
   display: -moz-flex;
@@ -81,7 +82,7 @@ header nav li:last-child {
 .above-footer nav li:last-child {
   margin-right: 0;
 }
-/*
+
 @media (max-width: 1000px) {
   header {
     padding: 20px 50px;
@@ -98,18 +99,38 @@ header nav li:last-child {
     margin: 0 7px;
   }
 }*/
-section {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 110px 100px;
-}
+
 @media screen and (min-device-width: 300px) and (max-device-width: 700px) {
-  section {
+  .about-area {
+    padding: 40px 10px;
+  }
+  .preci {
+    display: flex;
+    flex-direction: column;
+  }
+  .passion {
+    align-items: left;
+    padding: 10px;
+    text-align: justify;
+    padding-top: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  .precious-img {
+    background-image: url(images/Precious\ Birdsong\ Headshot.jpg);
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .preci-tab {
+    width: 100%;
+  }
+  .preci-tab h2 {
+    margin-top: 7%;
+  }
+  .services-content {
     padding: 40px 10px;
   }
   .about-content li p {
@@ -127,6 +148,319 @@ section {
   .section-title {
     font-size: 30px;
   }
+  .above-footer {
+    list-style-type: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    color: var(--white);
+    flex-direction: column;
+    align-items: left;
+    flex-basis: 100%;
+    font-size: 25px;
+    opacity: 0.8;
+    content: "";
+    height: fit-content;
+    padding: 0px 0px;
+    margin-top: 4%;
+  }
+  .foot-img {
+    background-image: url(images/DFTS_mobile1.jpg);
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 53.5vh;
+    -webkit-backgroud-size: cover;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+  .foot-img:after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+  }
+  #mission-quote {
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.5;
+    color: var(--button-color);
+    font-size: 17px;
+
+    margin: 10px;
+  }
+  .mission-img {
+    align-items: center;
+    text-align: center;
+    content: "";
+    height: 800px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .quick_links {
+    margin-top: 6%;
+    height: 100%;
+  }
+  .quick_links ul {
+    margin-top: 1%;
+  }
+  .volunt {
+    height: 100%;
+    padding-top: 3%;
+  }
+  .volunt li {
+    line-height: 2em;
+  }
+  .addre {
+    padding-top: 3%;
+    height: 100%;
+  }
+
+  .addre p {
+    padding-left: 3%;
+  }
+  .addre ul {
+    margin-left: -9%;
+  }
+  .above-footer ul {
+    padding-top: 3%;
+  }
+  .above-footer li {
+    padding: 10px;
+  }
+  .above-footer div {
+    padding-left: 10%;
+  }
+
+  .banner-area,
+  .about-area,
+  .video,
+  .services-area,
+  .contactus,
+  .sec,
+  .crew-area,
+  .pro,
+  .leg,
+  .donate,
+  .pre {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+  }
+  header .nav-bar {
+    display: flex;
+    padding-top: 3%;
+    padding-left: 25%;
+  }
+  .sec {
+    line-height: 2;
+  }
+  section p {
+    text-align: center;
+    line-height: 2;
+    padding: 0 20px;
+  }
+  .crew-area p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+  }
+  .crew-area {
+    background-color: var(--white);
+    height: 100%;
+  }
+  .crew-area ul {
+    flex-direction: column;
+  }
+  .crew-area h2 {
+    font-size: 30px;
+  }
+  .crew-area h4 {
+    font-size: 40px;
+  }
+  .crew-area h5 {
+    font-size: 28px;
+  }
+  .crew-area p {
+    font-size: 28px;
+  }
+  #crew-tab p {
+    margin-bottom: 30px;
+    height: 100%;
+  }
+  .services-content li h4 {
+    padding: 10px;
+    padding-top: 6%;
+  }
+  .programs {
+    display: flex;
+    flex-direction: column;
+  }
+  .program-img {
+    background-image: url(images/Our_Programs.jpg);
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    border-radius: 15px;
+    align-self: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-top: 5%;
+    margin-bottom: 6%;
+  }
+  .program-tab p {
+    text-align: justify;
+    padding-top: 70px;
+    font-size: 35px;
+  }
+  .program-tab h2 {
+    font-size: 40px;
+  }
+
+  .program-tab ul {
+    margin-top: -15px;
+    margin-left: 40px;
+  }
+  .program-tab li {
+    padding: 10px;
+    list-style-type: circle;
+  }
+  .program-tab {
+    padding-top: 30px;
+  }
+  .scholarship {
+    align-items: left;
+
+    text-align: justify;
+    padding-top: 5%;
+  }
+  .scholarship h2 {
+    padding-bottom: 4%;
+    font-size: 40px;
+  }
+  .scholarship p {
+    text-align: justify;
+    padding-top: 20px;
+  }
+  .scholarship ul {
+    margin-left: 40px;
+    padding-top: 5%;
+  }
+  .scholarship li {
+    padding: 10px;
+    list-style-type: square;
+    text-align: initial;
+    line-height: 2;
+  }
+  .legacy1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .legacy1 img {
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .legacy1 p {
+    padding: 20px;
+    padding-top: 50px;
+
+    text-align: justify;
+    align-items: center;
+    font-size: 18px;
+  }
+  .legacy2 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .legacy2 img {
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .legacy2 p {
+    padding: 20px;
+    padding-top: 50px;
+
+    text-align: justify;
+    align-items: center;
+    font-size: 18px;
+  }
+  .legacy3 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .legacy3 img {
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .legacy3 p {
+    padding: 20px;
+    padding-top: 50px;
+
+    text-align: justify;
+    align-items: center;
+    font-size: 18px;
+  }
+  .legacy4 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .legacy4 img {
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .legacy4 p {
+    padding: 20px;
+    padding-top: 50px;
+
+    text-align: justify;
+    align-items: center;
+    font-size: 18px;
+  }
+  .leg h2 {
+    font-size: 30px;
+  }
+  .donate h3 {
+    padding: 20px;
+
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
 }
 /*
 @media (max-width: 1000px) {
@@ -139,12 +473,6 @@ section {
     padding: 125px 30px;
   }
 }*/
-section p {
-  text-align: center;
-
-  padding: 0 20px;
-  line-height: 2;
-}
 
 .banner-area {
   position: relative;
@@ -173,21 +501,6 @@ section p {
   height: 100%;
   background-color: #000;
   opacity: 0.8;
-}
-
-.mission-img-padding {
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.mission-img {
-  align-items: center;
-  text-align: center;
-  content: "";
-  height: 600px;
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .banner-area h1 {
@@ -394,13 +707,7 @@ ul.drop {
   text-align: justify;
   font-size: 20px;
 }
-.crew-area p {
-  max-width: 800px;
-  margin-bottom: 35px;
-  line-height: 1.5;
-  text-align: left;
-  padding-left: 0;
-}
+
 .section-title {
   font-size: 30px;
   margin-bottom: 5%;
@@ -466,10 +773,7 @@ ul.services-content {
   color: var(--button-color);
   margin-bottom: 25px;
 }
-.services-content li h4 {
-  font-size: 20px;
-  padding: 10px;
-}
+
 .services-content li h5 {
   padding-bottom: 20px;
 }
@@ -480,10 +784,7 @@ ul.services-content {
 
   padding-left: 20px;
 }
-#crew-tab p {
-  margin-bottom: 30px;
-  height: 90px;
-}
+
 /*
 @media (max-width: 1000px) {
   .services-content li {
@@ -609,42 +910,294 @@ footer p {
 
   background: #fff;
 }
-.above-footer {
-  list-style-type: none;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  color: var(--white);
-  flex-direction: row;
+@media screen and (min-device-width: 1000px) {
+  .above-footer {
+    list-style-type: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    color: var(--white);
+    flex-direction: row;
 
-  flex-basis: 100%;
+    flex-basis: 100%;
 
-  opacity: 0.8;
-  content: "";
-  height: 540px;
-}
+    opacity: 0.8;
+    content: "";
+    height: 540px;
+  }
+  .passion {
+    align-items: left;
 
-.foot-img {
-  background-image: url(images/DFTS_new.jpg);
-  position: absolute;
+    text-align: justify;
+    padding-top: 20px;
+  }
+  .preci {
+    display: flex;
+    flex-direction: row;
+  }
+  .preci-tab {
+    padding-left: 30px;
+    width: 700px;
+  }
+  .precious-img {
+    background-image: url(images/Precious\ Birdsong\ Headshot.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  section {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+  }
+  .donate h3 {
+    padding: 20px;
+    width: 700px;
+    text-align: justify;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 23px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
+  .legacy1 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .legacy1 img {
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .legacy1 p {
+    padding: 20px;
+    padding-top: 50px;
+    width: 400px;
+    text-align: justify;
+    align-items: center;
+    font-size: 18px;
+  }
+  .legacy2 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .legacy2 img {
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .legacy2 p {
+    padding: 20px;
+    padding-top: 50px;
 
-  left: 0;
-  width: 100%;
-  height: 540px;
-  -webkit-backgroud-size: cover;
-  background-size: 100% 100%;
-  z-index: -1;
-}
-.foot-img:after {
-  content: "";
-  position: absolute;
+    width: 400px;
+    text-align: justify;
+    align-items: center;
+    font-size: 18px;
+  }
+  .legacy3 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .legacy3 img {
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .legacy3 p {
+    padding: 20px;
+    padding-top: 50px;
 
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
+    width: 400px;
+    text-align: justify;
+    align-items: center;
+    font-size: 18px;
+  }
+  .legacy4 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .legacy4 img {
+    height: 500px;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .legacy4 p {
+    padding: 20px;
+    padding-top: 50px;
+
+    width: 400px;
+    text-align: justify;
+    align-items: center;
+    font-size: 18px;
+  }
+  .program-tab {
+    padding: 15px;
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 700px;
+  }
+  .program-tab p {
+    text-align: justify;
+    padding-top: 20px;
+  }
+
+  .program-tab ul {
+    margin-top: -15px;
+    margin-left: 40px;
+  }
+  .program-tab li {
+    padding: 10px;
+    list-style-type: square;
+  }
+  .scholarship {
+    align-items: left;
+
+    text-align: justify;
+    padding-top: 20px;
+  }
+  .scholarship p {
+    text-align: justify;
+    padding-top: 20px;
+  }
+  .scholarship ul {
+    margin-top: -15px;
+    margin-left: 40px;
+  }
+  .scholarship li {
+    padding: 10px;
+    list-style-type: circle;
+  }
+  .program-img {
+    background-image: url(images/Our_Programs.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  section p {
+    text-align: center;
+
+    padding: 0 20px;
+    line-height: 2;
+  }
+  .programs {
+    display: flex;
+    flex-direction: row;
+  }
+  .services-content li h4 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .crew-area p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+  }
+  .crew-area {
+    background-color: var(--white);
+  }
+  #crew-tab p {
+    margin-bottom: 30px;
+    height: 90px;
+  }
+  #mission-quote {
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.5;
+    color: var(--button-color);
+    font-size: 17px;
+    text-align: center;
+    margin: 10px;
+  }
+  .mission-img {
+    align-items: center;
+    text-align: center;
+    content: "";
+    height: 600px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .foot-img {
+    background-image: url(images/DFTS_new.jpg);
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 540px;
+    -webkit-backgroud-size: cover;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+  .foot-img:after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+  }
+  .quick_links {
+    height: 325px;
+    margin-left: -1%;
+  }
+  .quick_links ul {
+    margin-top: 8%;
+  }
+  .contactus {
+    height: 1100px;
+    margin-top: -50px;
+  }
+  .volunt {
+    height: 325px;
+    padding-left: 5%;
+  }
+  .volunt li {
+    line-height: 2em;
+  }
+  .addre {
+    height: 325px;
+    padding-left: 5%;
+  }
+
+  .addre p {
+    padding-left: 3%;
+  }
+  .above-footer ul {
+    padding-top: 8%;
+  }
+  .above-footer li {
+    padding: 10px;
+  }
 }
 .foot-logo {
   background-image: url(images/White_Prime.png);
@@ -666,34 +1219,7 @@ footer p {
   width: 100%;
   height: 100%;
 } */
-.above-footer ul {
-  padding-top: 8%;
-}
-.above-footer li {
-  padding: 10px;
-}
-.quick_links {
-  height: 325px;
-  margin-left: -1%;
-}
-.quick_links ul {
-  margin-top: 8%;
-}
-.volunt {
-  height: 325px;
-  padding-left: 5%;
-}
-.volunt li {
-  line-height: 2em;
-}
-.addre {
-  height: 325px;
-  padding-left: 5%;
-}
 
-.addre p {
-  padding-left: 3%;
-}
 .cont {
   display: flex;
   flex-direction: column;
@@ -789,7 +1315,6 @@ header .nav-bar li:hover {
 }
 #crew-tab li {
   margin-bottom: 140px;
-  margin-left: 90px;
 }
 div.gallery {
   border: 1px solid #ccc;
@@ -1008,16 +1533,6 @@ div.desc {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
-.crew-area p {
-  max-width: 800px;
-  margin-bottom: 35px;
-  line-height: 1.5;
-  text-align: left;
-  padding-left: 0;
-}
-.crew-area {
-  background-color: var(--white);
-}
 .mission-content h2 {
   padding: 20px;
   text-align: center;
@@ -1025,17 +1540,6 @@ div.desc {
   margin-bottom: 30px;
 }
 
-#mission-quote {
-  font-weight: bold;
-  font-style: italic;
-
-  padding: 20px;
-  line-height: 1.5;
-  color: var(--button-color);
-  font-size: 17px;
-  text-align: center;
-  margin: 10px;
-}
 #mission-para {
   padding: 20px;
   padding-top: 5%;
@@ -1051,36 +1555,7 @@ div.desc {
 #prog-volt {
   margin-left: 20px;
 }
-.programs {
-  display: flex;
-  flex-direction: row;
-}
-.program-img {
-  background-image: url(images/Our_Programs.jpg);
-  background-size: cover;
-  height: 700px;
-  width: 500px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.program-tab {
-  padding: 15px;
-  padding-top: 30px;
-  padding-left: 30px;
-  width: 700px;
-}
-.preci {
-  display: flex;
-  flex-direction: row;
-}
-.precious-img {
-  background-image: url(images/Precious\ Birdsong\ Headshot.jpg);
-  background-size: cover;
-  height: 500px;
-  width: 400px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
+
 .lanise-img {
   background-image: url(images/La\'Nise\ Calhoun\ Headshot.jpg);
   background-size: cover;
@@ -1105,10 +1580,7 @@ div.desc {
   border-radius: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-.preci-tab {
-  padding-left: 30px;
-  width: 700px;
-}
+
 .preci-tab h2 {
   color: var(--button-color);
 }
@@ -1119,12 +1591,7 @@ div.desc {
   padding-left: 30px;
   width: 700px;
 }
-.passion {
-  align-items: left;
 
-  text-align: justify;
-  padding-top: 20px;
-}
 .passion h3 {
   padding: 25px;
   color: var(--button-color);
@@ -1154,126 +1621,7 @@ div.desc {
 .bet {
   padding-top: 30px;
 }
-.scholarship {
-  align-items: left;
 
-  text-align: justify;
-  padding-top: 20px;
-}
-.scholarship p {
-  text-align: justify;
-  padding-top: 20px;
-}
-.scholarship ul {
-  margin-top: -15px;
-  margin-left: 40px;
-}
-.scholarship li {
-  padding: 10px;
-  list-style-type: circle;
-}
-.program-tab p {
-  text-align: justify;
-  padding-top: 20px;
-}
-
-.program-tab ul {
-  margin-top: -15px;
-  margin-left: 40px;
-}
-.program-tab li {
-  padding: 10px;
-  list-style-type: circle;
-}
-
-.legacy1 {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  padding-top: 60px;
-}
-.legacy1 img {
-  height: 500px;
-  width: 700px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.legacy1 p {
-  padding: 20px;
-  padding-top: 50px;
-  width: 400px;
-  text-align: justify;
-  align-items: center;
-  font-size: 18px;
-}
-.legacy2 {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  padding-top: 60px;
-}
-.legacy2 img {
-  height: 500px;
-  width: 700px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.legacy2 p {
-  padding: 20px;
-  padding-top: 50px;
-
-  width: 400px;
-  text-align: justify;
-  align-items: center;
-  font-size: 18px;
-}
-.legacy3 {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  padding-top: 60px;
-}
-.legacy3 img {
-  height: 500px;
-  width: 700px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.legacy3 p {
-  padding: 20px;
-  padding-top: 50px;
-
-  width: 400px;
-  text-align: justify;
-  align-items: center;
-  font-size: 18px;
-}
-.legacy4 {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  padding-top: 60px;
-}
-.legacy4 img {
-  height: 500px;
-  width: 700px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.legacy4 p {
-  padding: 20px;
-  padding-top: 50px;
-
-  width: 400px;
-  text-align: justify;
-  align-items: center;
-  font-size: 18px;
-}
-
-.contactus {
-  height: 1100px;
-  margin-top: -50px;
-}
 .cont-img {
   background-image: url(images/1.jpg);
   position: absolute;
@@ -1333,6 +1681,7 @@ div.desc {
   font-size: 40px;
   font-weight: bolder;
   color: var(--button-color);
+  text-align: center;
 }
 #donat {
   list-style-type: none;
@@ -1348,17 +1697,7 @@ div.desc {
   margin: 20px;
   margin-top: 80px;
 }
-.donate h3 {
-  padding: 20px;
-  width: 700px;
-  text-align: center;
-  align-items: center;
-  padding-top: 20px;
-  padding-left: 50px;
-  font-size: 23px;
-  line-height: 1.5;
-  margin-bottom: 50px;
-}
+
 .donate h2 {
   padding: 40px;
 }
