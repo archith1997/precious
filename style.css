@@ -104,6 +104,125 @@ header nav li:last-child {
   .about-area {
     padding: 40px 10px;
   }
+  .lanise-img {
+    background-image: url(images/La\'Nise\ Calhoun\ Headshot.jpg);
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .linda-img {
+    background-image: url(images/Linda\ Cooke\ Headshot.jpeg);
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .kelli-img {
+    background-image: url(images/Kelli_Smith.jpg);
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  p {
+    line-height: 2;
+  }
+  .preci-tab p {
+    text-align: justify;
+    padding: 15px;
+    padding-top: 30px;
+  }
+  .passion h3 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: var(--button-color);
+  }
+  .passion li {
+    padding: 10px;
+    width: 700px;
+    line-height: 2;
+    text-align: justify;
+    list-style-type: circle;
+  }
+  .wrapper {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+
+    max-width: 800px;
+    width: 800px;
+
+    background: var(--white);
+    padding: 40px;
+    margin: 50px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+  }
+  .wrapper .msg > input {
+    width: 720px;
+    padding: 10px 20px;
+    margin-top: -10px;
+    height: 80px;
+    border: 1px solid var(--button-color);
+  }
+  .wrapper .input-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin: 10px;
+  }
+  .input-form .input {
+    padding-top: 10px;
+  }
+
+  .inner-address p {
+    font-size: 17px;
+  }
+  .inner-address .fa {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--button-color);
+    margin-bottom: 50px;
+  }
+  .about-btn {
+    padding: 15px 35px;
+    align-content: center;
+    background: var(--button-color);
+    border-radius: 50px;
+    font-size: 25px;
+    color: #fff;
+  }
+  ul.crew-content {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 5%;
+  }
+
+  .about-btn:hover {
+    background: var(--white);
+    border: 1.5px solid var(--button-color);
+    color: var(--button-color);
+    font-weight: bold;
+  }
   .preci {
     display: flex;
     flex-direction: column;
@@ -134,12 +253,12 @@ header nav li:last-child {
     padding: 40px 10px;
   }
   .about-content li p {
-    font-size: 28px;
     padding-top: 1.5%;
+    line-height: 2;
   }
   .crew-content li p {
-    font-size: 28px;
     padding-top: 1.5%;
+    line-height: 2;
   }
   .crew-content li {
     padding-top: 5%;
@@ -251,7 +370,10 @@ header nav li:last-child {
   .pro,
   .leg,
   .donate,
-  .pre {
+  .pre,
+  .lan,
+  .lin,
+  .kel {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -264,7 +386,7 @@ header nav li:last-child {
   header .nav-bar {
     display: flex;
     padding-top: 3%;
-    padding-left: 25%;
+    padding-left: 23%;
   }
   .sec {
     line-height: 2;
@@ -277,7 +399,7 @@ header nav li:last-child {
   .crew-area p {
     max-width: 800px;
     margin-bottom: 35px;
-    line-height: 1.5;
+    line-height: 2;
     text-align: left;
     padding-left: 0;
   }
@@ -462,17 +584,6 @@ header nav li:last-child {
     margin-bottom: 50px;
   }
 }
-/*
-@media (max-width: 1000px) {
-  section {
-    padding: 100px 50px;
-  }
-}
-@media (max-width: 600px) {
-  section {
-    padding: 125px 30px;
-  }
-}*/
 
 .banner-area {
   position: relative;
@@ -555,17 +666,7 @@ ul.about-content {
   flex-basis: 40%;
   background-image: url(images/1.jpg);
 }
-ul.crew-content {
-  width: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 5%;
-}
+
 .crew-content li {
   background-clip: content-box;
 
@@ -688,21 +789,18 @@ ul.drop {
 .about-area p {
   max-width: 800px;
   margin-bottom: 35px;
-  line-height: 1.5;
+  line-height: 2;
   text-align: left;
   padding-left: 0;
 }
 .services-area p {
   max-width: 800px;
   margin-bottom: 35px;
-  line-height: 1.5;
+  line-height: 2;
   text-align: left;
   padding-left: 0;
 }
 
-.crew-right {
-  flex-basis: 60%;
-}
 .crew-right p {
   text-align: justify;
   font-size: 20px;
@@ -719,21 +817,7 @@ ul.drop {
 .crew-right h2 {
   margin-bottom: 3%;
 }
-.about-btn {
-  padding: 15px 35px;
-  align-content: center;
-  background: var(--button-color);
-  border-radius: 50px;
 
-  color: #fff;
-}
-
-.about-btn:hover {
-  background: var(--white);
-  border: 1.5px solid var(--button-color);
-  color: var(--button-color);
-  font-weight: bold;
-}
 .above-footer li:hover {
   color: var(--button-color);
   font-weight: bold;
@@ -926,6 +1010,126 @@ footer p {
     opacity: 0.8;
     content: "";
     height: 540px;
+  }
+  .lanise-img {
+    background-image: url(images/La\'Nise\ Calhoun\ Headshot.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .linda-img {
+    background-image: url(images/Linda\ Cooke\ Headshot.jpeg);
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .kelli-img {
+    background-image: url(images/Kelli_Smith.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .passion h3 {
+    padding: 25px;
+    color: var(--button-color);
+  }
+  .passion li {
+    padding: 10px;
+    width: 900px;
+    line-height: 1.5;
+    list-style-type: circle;
+  }
+  .preci-tab p {
+    text-align: justify;
+    padding: 15px;
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 700px;
+  }
+  .wrapper .msg > input {
+    width: 600px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 10px 20px;
+    height: 80px;
+    border: 1px solid var(--button-color);
+  }
+  .wrapper {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+
+    max-width: 700px;
+
+    background: var(--white);
+    padding: 40px;
+    margin: 50px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+  }
+  .input-form .input {
+    width: 290px;
+  }
+
+  .wrapper .input-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin: 10px;
+  }
+  .inner-address p {
+    font-size: 12px;
+  }
+  .inner-address .fa {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--button-color);
+    margin-bottom: 50px;
+  }
+  ul.crew-content {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5%;
+  }
+  .crew-right {
+    flex-basis: 60%;
+  }
+  .about-btn {
+    padding: 15px 35px;
+    align-content: center;
+    background: var(--button-color);
+    border-radius: 50px;
+
+    color: #fff;
+  }
+
+  .about-btn:hover {
+    background: var(--white);
+    border: 1.5px solid var(--button-color);
+    color: var(--button-color);
+    font-weight: bold;
   }
   .passion {
     align-items: left;
@@ -1373,20 +1577,7 @@ div.desc {
   outline: #fff;
   color: #fff;
 }
-.wrapper {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Ubuntu", sans-serif;
-  box-sizing: border-box;
 
-  max-width: 700px;
-
-  background: var(--white);
-  padding: 40px;
-  margin: 50px auto;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  padding-top: 50px;
-}
 .wrapper h1 {
   text-align: center;
   text-transform: uppercase;
@@ -1395,20 +1586,6 @@ div.desc {
   font-size: 35px;
 }
 
-.address {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  color: var(--button-color);
-  margin-bottom: 50px;
-}
-.inner-address p {
-  font-size: 12px;
-}
-.inner-address .fa {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
 .wrapper .form {
   display: flex;
   flex-direction: column;
@@ -1422,13 +1599,6 @@ div.desc {
   text-align: center;
 }
 
-.wrapper .input-form {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin: 10px;
-}
 .wrapper .inner-msg {
   width: 100%;
   margin-bottom: 10px;
@@ -1440,23 +1610,13 @@ div.desc {
 
   padding: 8px 10px;
 }
-.wrapper .msg > input {
-  width: 600px;
-  margin-right: -10px;
-  margin-left: -10px;
-  margin-top: -10px;
-  height: 80px;
-  border: 1px solid var(--button-color);
-}
+
 .wrapper .input > input {
   border: 0;
   width: 100%;
   padding: 10px 20px;
   outline: none;
   border: 1px solid var(--button-color);
-}
-.input-form .input {
-  width: 290px;
 }
 
 .wrapper .btn {
@@ -1556,46 +1716,10 @@ div.desc {
   margin-left: 20px;
 }
 
-.lanise-img {
-  background-image: url(images/La\'Nise\ Calhoun\ Headshot.jpg);
-  background-size: cover;
-  height: 500px;
-  width: 400px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.linda-img {
-  background-image: url(images/Linda\ Cooke\ Headshot.jpeg);
-  background-size: cover;
-  height: 500px;
-  width: 400px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.kelli-img {
-  background-image: url(images/Kelli_Smith.jpg);
-  background-size: cover;
-  height: 500px;
-  width: 400px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
 .preci-tab h2 {
   color: var(--button-color);
 }
-.preci-tab p {
-  text-align: justify;
-  padding: 15px;
-  padding-top: 30px;
-  padding-left: 30px;
-  width: 700px;
-}
 
-.passion h3 {
-  padding: 25px;
-  color: var(--button-color);
-}
 .passion p {
   text-align: justify;
   padding-top: 20px;
@@ -1604,18 +1728,14 @@ div.desc {
   margin-top: -15px;
   margin-left: 40px;
 }
-.passion li {
-  padding: 10px;
-  width: 900px;
-  line-height: 1.5;
-  list-style-type: circle;
-}
+
 .li {
   line-height: 1.8;
 }
 .head {
   padding-bottom: 50px;
   font-size: 35px;
+  width: 100%;
 }
 
 .bet {
@@ -1638,7 +1758,7 @@ div.desc {
   content: "";
   position: absolute;
   width: 100%;
-  height: 1000px;
+  height: 100%;
   background-color: #000;
 
   opacity: 0.8;
