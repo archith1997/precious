@@ -54,7 +54,7 @@ header nav {
 header .nav-bar {
   display: flex;
   padding-top: 3%;
-  padding-left: 50%;
+  padding-left: 32%;
 }
 header nav li {
   margin: 0 15px;
