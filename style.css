@@ -54,7 +54,7 @@ header nav {
 header .nav-bar {
   display: flex;
   padding-top: 3%;
-  padding-left: 32%;
+  padding-left: 50%;
 }
 header nav li {
   margin: 0 15px;
@@ -65,44 +65,13 @@ header nav li:first-child {
 header nav li:last-child {
   margin-right: 0;
 }
-/*
-.above-footer nav {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-}
-.above-footer nav li {
-  margin: 0 15px;
-}
-.above-footer nav li:first-child {
-  margin-left: 0;
-}
-.above-footer nav li:last-child {
-  margin-right: 0;
+.cont p {
+  line-height: 0.9;
 }
 
-@media (max-width: 1000px) {
-  header {
-    padding: 20px 50px;
-  }
-}
-@media (max-width: 700px) {
-  header {
-    flex-direction: column;
-  }
-  header h2 {
-    margin-bottom: 15px;
-  }
-  header nav li {
-    margin: 0 7px;
-  }
-}*/
-
-@media screen and (min-device-width: 300px) and (max-device-width: 700px) {
+@media screen and (min-device-width: 100px) and (max-device-width: 1000px) {
   #cc {
-    height: 1000px;
+    height: 1100px;
   }
   .about-area {
     padding: 40px 10px;
@@ -113,7 +82,8 @@ header nav li:last-child {
 
     left: 0;
     width: 100%;
-    height: 1000px;
+    height: 100%;
+    max-height: 1100px;
     -webkit-backgroud-size: cover;
     background-size: cover;
     z-index: -1;
@@ -122,11 +92,21 @@ header nav li:last-child {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1000px;
+    height: inherit;
     background-color: #000;
 
     opacity: 0.8;
     left: 0px;
+  }
+  .contactus {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
   }
   .lanise-img {
     background-image: url(images/La\'Nise\ Calhoun\ Headshot.jpg);
@@ -183,7 +163,7 @@ header nav li:last-child {
 
     background: var(--white);
     padding: 40px;
-    margin: 50px auto;
+    margin: auto auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     padding-top: 50px;
   }
@@ -210,6 +190,10 @@ header nav li:last-child {
     font-size: 17px;
   }
   .inner-address .fa {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .inner-address .fas {
     font-size: 40px;
     margin-bottom: 10px;
   }
@@ -289,7 +273,7 @@ header nav li:last-child {
     padding-bottom: 5%;
   }
   .section-title {
-    font-size: 30px;
+    font-size: 40px;
   }
   .above-footer {
     list-style-type: none;
@@ -356,7 +340,6 @@ header nav li:last-child {
     margin-top: 1%;
   }
   .volunt {
-    height: 100%;
     padding-top: 3%;
   }
   .volunt li {
@@ -387,7 +370,6 @@ header nav li:last-child {
   .about-area,
   .video,
   .services-area,
-  .contactus,
   .sec,
   .crew-area,
   .pro,
@@ -593,7 +575,7 @@ header nav li:last-child {
     font-size: 18px;
   }
   .leg h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .donate h3 {
     padding: 20px;
@@ -700,14 +682,7 @@ ul.about-content {
 .crew-left {
   flex-basis: 40%;
   background-image: url(images/1.jpg);
-} /*
-.main-logo {
-  flex-basis: 40%;
-  max-height: 18%;
-  max-width: 25%;
-  object-fit: cover;
-  vertical-align: bottom;
-}*/
+}
 .main-logo {
   background-image: url(images/White_Prime.png);
   position: absolute;
@@ -764,26 +739,7 @@ ul.about-content {
 .drop li {
   padding-top: 5px;
 }
-/*
-@media (max-width: 1000px) {
-  .about-left,
-  .about-right {
-    flex-basis: 100%;
-  }
-  .about-content li {
-    padding: 8px;
-  }
-}
-@media (max-width: 1000px) {
-  .crew-left,
-  .crew-right {
-    flex-basis: 100%;
-  }
-  .crew-content li {
-    padding: 8px;
-  }
-}
-*/
+
 ul.drop {
   width: 100%;
   display: -webkit-flex;
@@ -830,7 +786,6 @@ ul.drop {
 }
 
 .section-title {
-  font-size: 30px;
   margin-bottom: 5%;
   padding: 20px;
 }
@@ -845,17 +800,7 @@ ul.drop {
   color: var(--button-color);
   font-weight: bold;
 }
-/*
-@media (max-width: 1000px) {
-  .about-left,
-  .about-right {
-    flex-basis: 100%;
-  }
-  .about-content li {
-    padding: 8px;
-  }
-}
-*/
+
 #services {
   background: var(--white);
 }
@@ -892,19 +837,6 @@ ul.services-content {
   padding-left: 20px;
 }
 
-/*
-@media (max-width: 1000px) {
-  .services-content li {
-    flex-basis: 100%;
-    margin-bottom: 65px;
-  }
-  .services-content li:last-child {
-    margin-bottom: 0;
-  }
-  .services-content li p {
-    padding: 0;
-  }
-}*/
 #contact {
   background: black;
   color: #fff;
@@ -932,19 +864,7 @@ ul.contact-content {
 .contact-content li p {
   margin: 0;
 }
-/*
-@media (max-width: 1000px) {
-  .contact-content li {
-    flex-basis: 100%;
-    margin-bottom: 65px;
-  }
-  .contact-content li:last-child {
-    margin-bottom: 0;
-  }
-  .contact-content li p {
-    padding: 0;
-  }
-}*/
+
 footer {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1040,7 +960,7 @@ footer p {
 
     left: 0;
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     -webkit-backgroud-size: cover;
     background-size: cover;
     z-index: -1;
@@ -1049,13 +969,18 @@ footer p {
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: inherit;
     background-color: #000;
 
     opacity: 0.8;
     left: 0px;
   }
-
+  #cc {
+    height: 1200px;
+  }
+  .section-title {
+    font-size: 30px;
+  }
   .lanise-img {
     background-image: url(images/La\'Nise\ Calhoun\ Headshot.jpg);
     background-size: cover;
@@ -1116,9 +1041,8 @@ footer p {
 
     background: var(--white);
     padding: 40px;
-    margin: 50px auto;
+    margin: auto auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    padding-top: 50px;
   }
   .input-form .input {
     width: 290px;
@@ -1136,6 +1060,10 @@ footer p {
     font-size: 12px;
   }
   .inner-address .fa {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .inner-address .fas {
     font-size: 30px;
     margin-bottom: 10px;
   }
@@ -1423,8 +1351,10 @@ footer p {
     margin-top: 8%;
   }
   .contactus {
-    height: 1100px;
-    margin-top: -50px;
+    height: 100%;
+    max-height: 1200px;
+
+    padding: 0px 100px;
   }
   .volunt {
     height: 325px;
@@ -1461,13 +1391,6 @@ footer p {
   background-size: cover;
   z-index: 1;
 }
-/* .foot-logo:after {
-  content: "";
-  position: absolute;
-
-  width: 100%;
-  height: 100%;
-} */
 
 .cont {
   display: flex;
@@ -1479,6 +1402,9 @@ footer p {
   flex-direction: row;
 }
 .inadd .fa {
+  font-size: 25px;
+}
+.inadd .fas {
   font-size: 25px;
 }
 .above-footer li {
@@ -1520,7 +1446,6 @@ footer p {
 .social {
   padding: 20px;
   flex-direction: row;
-  margin-bottom: -70px;
 }
 #fb i:hover {
   color: #4060a5;
@@ -1687,7 +1612,12 @@ div.desc {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-
+.inner-social .fas {
+  margin: 20px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
 ::-webkit-input-placeholder {
   color: var(--button-color);
 
@@ -1786,36 +1716,6 @@ div.desc {
 .bet {
   padding-top: 30px;
 }
-
-/*
-.banner-area {
-  position: relative;
-  justify-content: center;
-  min-height: 100vh;
-  color: #fff;
-  text-align: center;
-}
-.banner-area .banner-img {
-  background-image: url(2.jpg);
-  position: absolute;
-  
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backgroud-size: cover;
-  background-size: cover;
-  z-index: -1;
-}
-.banner-area .banner-img:after {
-  content: "";
-  position: absolute;
-  
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.8;
-} */
 
 .donate {
   padding: 20px;
