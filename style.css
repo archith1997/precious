@@ -391,7 +391,7 @@ header nav li:last-child {
   header .nav-bar {
     display: flex;
     padding-top: 3%;
-    padding-left: 23%;
+    padding-left: 10%;
   }
   .sec {
     line-height: 2;
@@ -687,8 +687,8 @@ ul.about-content {
   background-image: url(images/White_Prime.png);
   position: absolute;
 
-  left: 30px;
-  top: 25px;
+  left: 2%;
+  top: 5%;
 
   width: 240px;
   height: 160px;
@@ -696,13 +696,13 @@ ul.about-content {
   background-size: cover;
   z-index: 1;
 }
-.main-logo:after {
+/* .main-logo:after {
   content: "";
   position: absolute;
 
   width: 100%;
   height: 100%;
-}
+} */
 
 .nav-bar {
   list-style-type: none;
